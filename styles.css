@@ -1,0 +1,49 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically if the container has height */
+    text-align: center; /* Centers text within the elements */
+}
+
+.main h2, p {
+    text-align: center;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+}
+
+.main form div {
+    margin-top: 10px;
+}
+
+.main form select {
+    width: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+}
+
+table td {
+    padding: 5px 10px 5px 10px;
+}
+
+table td p {
+    margin: 0px;
+}
+
+table td img {
+    margin: 0px;
+    width: 150px;
+}
+
+table td input {
+    width: 50px;
+    margin-right: 10px;
+}

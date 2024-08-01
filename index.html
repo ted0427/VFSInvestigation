@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.F.S. 수사일지</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 외부 스타일시트 연결 -->
+    <script src="script.js" defer></script> <!-- 외부 스크립트 파일 연결 -->
+</head>
+
+<body>
+    <div class="main">
+        <section id="investigation">
+            <h2>V.F.S. 수사일지</h1>
+                <form>
+                    <div>
+                        <label>장소 : </label>
+                        <select id="place">
+                        </select>
+                    </div>
+                    <div>
+                        <label>물품 : </label>
+                        <select id="item">
+                        </select>
+                    </div>
+                    <div>
+                        <label>수사방법 : </label>
+                        <select id="method">
+                        </select>
+                    </div>
+                    <div>
+                        <input type="button" value="수사하기" onclick="startInvestigation()" />
+                    </div>
+                </form>
+        </section>
+        <section id="record">
+            <h2>수사 기록</h2>
+            <table border="1px solid black">
+                <thead>
+                    <tr>
+                        <th>장소</th>
+                        <th>물품</th>
+                        <th>수사방법</th>
+                        <th>결과</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 찾아가는 국과수 V.F.S.</p>
+    </footer>
+</body>
+
+</html>
